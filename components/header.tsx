@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { useState } from "react"
 import { useAuth } from "./auth-provider"
+import Link from "next/link"
 
 export default function Header() {
   const { user, logout } = useAuth()
@@ -69,8 +70,12 @@ export default function Header() {
               <span className="text-sm text-gray-500">{user?.rol || "Rol no definido"}</span>
             </DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Perfil</DropdownMenuItem>
-            <DropdownMenuItem>Configuración</DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link href="/perfil">Perfil</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link href="/configuracion">Configuración</Link>
+            </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem onClick={logout} className="text-red-600">
               <LogOut className="mr-2 h-4 w-4" />
