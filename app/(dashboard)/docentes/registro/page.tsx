@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -215,9 +217,14 @@ export default function RegistroDocentesPage() {
                     </div>
                   </div>
 
-                  <div className="flex justify-end gap-3">
-                    <Button variant="outline">Cancelar</Button>
-                    <Button className="bg-red-600 hover:bg-red-700 text-white">Guardar Docente</Button>
+                  <div className="flex justify-between gap-3">
+                    <Button variant="outline" onClick={() => window.history.back()}>
+                      Volver
+                    </Button>
+                    <div className="flex gap-3">
+                      <Button variant="outline">Cancelar</Button>
+                      <Button className="bg-red-600 hover:bg-red-700 text-white">Guardar Docente</Button>
+                    </div>
                   </div>
                 </form>
               </CardContent>

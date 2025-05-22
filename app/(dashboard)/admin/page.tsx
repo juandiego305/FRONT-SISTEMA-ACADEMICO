@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { ShieldCheck, Key } from "lucide-react"
 import Link from "next/link"
+import ModuleNavigation from "@/components/module-navigation"
 
 export default function AdminPage() {
   const submodules = [
@@ -24,6 +25,7 @@ export default function AdminPage() {
 
   return (
     <div className="container mx-auto">
+      <ModuleNavigation />
       <div className="flex flex-col gap-6">
         <div>
           <h1 className="text-3xl font-bold text-red-600">Administración y Seguridad</h1>

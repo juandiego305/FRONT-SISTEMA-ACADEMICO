@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { FileText, BarChart2, MessageSquare } from "lucide-react"
 import Link from "next/link"
+import ModuleNavigation from "@/components/module-navigation"
 
 export default function CalificacionesPage() {
   const submodules = [
@@ -31,6 +32,7 @@ export default function CalificacionesPage() {
 
   return (
     <div className="container mx-auto">
+      <ModuleNavigation />
       <div className="flex flex-col gap-6">
         <div>
           <h1 className="text-3xl font-bold text-red-600">Evaluación y Calificaciones</h1>

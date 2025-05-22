@@ -1,8 +1,9 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
-import { BookOpen, Calendar, ClipboardList } from "lucide-react"
+import { BookOpen, Calendar, ClipboardList, BookText } from "lucide-react"
 import Link from "next/link"
+import ModuleNavigation from "@/components/module-navigation"
 
 export default function CursosPage() {
   const submodules = [
@@ -12,6 +13,13 @@ export default function CursosPage() {
       description: "Cree y administre cursos y asignaturas",
       icon: <BookOpen className="h-6 w-6 text-red-600" />,
       path: "/cursos/administracion",
+    },
+    {
+      id: "materias",
+      title: "Gestión de Materias",
+      description: "Administre las materias del sistema académico",
+      icon: <BookText className="h-6 w-6 text-red-600" />,
+      path: "/cursos/materias",
     },
     {
       id: "horarios",
@@ -31,6 +39,7 @@ export default function CursosPage() {
 
   return (
     <div className="container mx-auto">
+      <ModuleNavigation />
       <div className="flex flex-col gap-6">
         <div>
           <h1 className="text-3xl font-bold text-red-600">Gestión de Cursos y Asignaturas</h1>
@@ -38,7 +47,7 @@ export default function CursosPage() {
         </div>
 
         <Tabs defaultValue="administracion" className="w-full">
-          <TabsList className="grid grid-cols-3 mb-6">
+          <TabsList className="grid grid-cols-4 mb-6">
             {submodules.map((submodule) => (
               <TabsTrigger
                 key={submodule.id}

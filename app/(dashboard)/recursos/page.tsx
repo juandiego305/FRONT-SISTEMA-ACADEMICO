@@ -3,6 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { Building, BookOpen } from "lucide-react"
 import Link from "next/link"
+import ModuleNavigation from "@/components/module-navigation"
 
 export default function RecursosPage() {
   const submodules = [
@@ -24,6 +25,7 @@ export default function RecursosPage() {
 
   return (
     <div className="container mx-auto">
+      <ModuleNavigation />
       <div className="flex flex-col gap-6">
         <div>
           <h1 className="text-3xl font-bold text-red-600">Gestión de Recursos Académicos</h1>
