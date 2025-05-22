@@ -204,31 +204,36 @@ export default function PromediosPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="h-64 flex items-end justify-around gap-2">
-                    <div className="flex flex-col items-center">
-                      <div className="bg-red-200 w-12 h-8 rounded-t-md"></div>
-                      <div className="text-xs mt-1">50-59</div>
-                      <div className="text-xs text-gray-500">1</div>
+                  <div className="h-[200px] flex items-end gap-2">
+                    <div className="relative flex h-full w-full flex-col justify-end gap-2">
+                      <div className="w-full bg-red-100 rounded-sm" style={{ height: "10%" }}>
+                        <div className="absolute -top-6 text-xs">1</div>
+                      </div>
+                      <div className="text-xs text-gray-500">0-60</div>
                     </div>
-                    <div className="flex flex-col items-center">
-                      <div className="bg-red-300 w-12 h-16 rounded-t-md"></div>
-                      <div className="text-xs mt-1">60-69</div>
-                      <div className="text-xs text-gray-500">0</div>
+                    <div className="relative flex h-full w-full flex-col justify-end gap-2">
+                      <div className="w-full bg-red-200 rounded-sm" style={{ height: "0%" }}>
+                        <div className="absolute -top-6 text-xs">0</div>
+                      </div>
+                      <div className="text-xs text-gray-500">61-70</div>
                     </div>
-                    <div className="flex flex-col items-center">
-                      <div className="bg-red-400 w-12 h-32 rounded-t-md"></div>
-                      <div className="text-xs mt-1">70-79</div>
-                      <div className="text-xs text-gray-500">1</div>
+                    <div className="relative flex h-full w-full flex-col justify-end gap-2">
+                      <div className="w-full bg-red-300 rounded-sm" style={{ height: "20%" }}>
+                        <div className="absolute -top-6 text-xs">2</div>
+                      </div>
+                      <div className="text-xs text-gray-500">71-80</div>
                     </div>
-                    <div className="flex flex-col items-center">
-                      <div className="bg-red-500 w-12 h-48 rounded-t-md"></div>
-                      <div className="text-xs mt-1">80-89</div>
-                      <div className="text-xs text-gray-500">3</div>
+                    <div className="relative flex h-full w-full flex-col justify-end gap-2">
+                      <div className="w-full bg-red-400 rounded-sm" style={{ height: "20%" }}>
+                        <div className="absolute -top-6 text-xs">2</div>
+                      </div>
+                      <div className="text-xs text-gray-500">81-90</div>
                     </div>
-                    <div className="flex flex-col items-center">
-                      <div className="bg-red-600 w-12 h-24 rounded-t-md"></div>
-                      <div className="text-xs mt-1">90-100</div>
-                      <div className="text-xs text-gray-500">1</div>
+                    <div className="relative flex h-full w-full flex-col justify-end gap-2">
+                      <div className="w-full bg-red-500 rounded-sm" style={{ height: "10%" }}>
+                        <div className="absolute -top-6 text-xs">1</div>
+                      </div>
+                      <div className="text-xs text-gray-500">91-100</div>
                     </div>
                   </div>
                 </CardContent>
