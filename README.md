@@ -9,4 +9,10 @@
 
 ## DESPLIEGUE 
 
-**https://v0-divisit-frontend.vercel.app/login**
+**https://v0-divisit-frontend.vercel.app/log**
+
+##CREDENCIALES
+
+Número de Documento: 12345678
+Código: EST001
+Contraseña: password
