@@ -9,7 +9,7 @@
 
 ## DESPLIEGUE 
 
-**https://v0-divisit-frontend.vercel.app/log**
+**https://v0-divisit-frontend.vercel.app/login**
 
 ##CREDENCIALES
 
