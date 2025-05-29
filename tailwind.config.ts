@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss"
- ñee
 const config = {
   darkMode: ["class"],
   content: [
