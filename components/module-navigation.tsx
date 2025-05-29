@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation"
 
 // Definimos la estructura de los módulos principales
 const mainModules = [
-  { path: "/dashboard", label: "Dashboard", icon: Home },
+  { path: "/dashboard", label: "Dashboard", icon: Home }
   { path: "/estudiantes", label: "Estudiantes" },
   { path: "/docentes", label: "Docentes" },
   { path: "/cursos", label: "Cursos" },
